@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <h1>CREACIONES DORITA</h1>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="menu__item"><a href="productos.html" class="nav__link">Productos</a></li>
+                <li class="menu__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <img id="imagenZenon" src="img/zenon.png" alt="zenon">        
+        <main>
+            <div class="formContacto">
+                <p class="consulta">Déjanos tu consulta y te contactaremos a la brevedad</p>
+                <form action="" method="POST">
+                    <div class="mb-1">
+                        <!-- FORMULARIO CON BOOTSTRAP -->
+                        <label for="nombreyApellido" class="form-label">Nombre y Apellido</label>
+                        <input type="text" class="form-control" id="nombreyApellido" placeholder="Nombre y Apellido">
+                    </div>
+                    <div class="mb-1">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="mb-1">
+                        <label for="textoClub" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="textoClub" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <button id="botonEnviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </section>
+
+
+    <footer class="pie">
+        <p class="pie__parrafo">Seguinos en Instagram<p>
+        <img id="logoInstagram" src="img/instagram.png" alt="logo instagram">
+    </footer>
+
+   
+    <script src="proyectoBulaccio.js"></script>
+    <script src="carrito.js"></script>
+</body>
+
+</html>

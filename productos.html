@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Creaciones Dorita</title>
+</head>
+
+<body>
+    <header>
+        <h1>CREACIONES DORITA</h1>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li class="menu__item"><a href="index.html" class="nav__link">Inicio</a></li>
+                <li class="menu__item"><a href="productos.html" class="nav__link">Productos</a></li>
+                <li class="menu__item"><a href="contacto.html" class="nav__link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Producto agregado!
+    </div>
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+        Gracias por su compra!
+    </div>
+
+
+    <!-- CONTENEDOR DE PRODUCTOS -->
+    <div class="page-content">
+
+        <div class="product-container">
+            <h2 class="nombreProducto">Hipopotamo</h2>
+            <img class="imagenProducto" src="img/cuadroHipopotamo.png" alt="Hipopotamo">
+            <h3 class="precioProducto">$2.500</h3>
+            <button class="item-button btn btn-primary agregarCarrito" data-id="1">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2 class="nombreProducto">Gatito a rayas</h2>
+            <img class="imagenProducto" src="img/cuadroGatitoRayas.png" alt="Gatito a rayas">
+            <h3 class="precioProducto">$2.500</h3>
+            <button class="item-button btn btn-primary agregarCarrito" data-id="2">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2 class="nombreProducto">Animalitos Vertical</h2>
+            <img class="imagenProducto" src="img/cuadroAnimalitosVertical.png" alt="Animalitos Vertical">
+            <h3 class="precioProducto">$2.500</h3>
+            <button class="item-button btn btn-primary agregarCarrito" data-id="3">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2 class="nombreProducto">Nena y naturaleza</h2>
+            <img class="imagenProducto" src="img/cuadroNenaNaturaleza.png" alt="Nena y naturaleza">
+            <h3 class="precioProducto">$2.500</h3>
+            <button class="item-button btn btn-primary agregarCarrito" data-id="4">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2 class="nombreProducto">Jirafa</h2>
+            <img class="imagenProducto" src="img/jirafa.png" alt="Jirafa">
+            <h3 class="precioProducto">$2.500</h3>
+            <button class="item-button btn btn-primary agregarCarrito" data-id="5">Agregar</button>
+        </div>
+
+        <div class="product-container">
+            <h2 class="nombreProducto">Dino</h2>
+            <img class="imagenProducto" src="img/dino.png" alt="Dino">
+            <h3 class="precioProducto">$2.500</h3>
+            <button class="item-button btn btn-primary agregarCarrito" data-id="6">Agregar</button>
+        </div>
+
+    </div>
+
+
+    <!-- CARRITO DE COMPRAS -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h3 class="text-center">Carrito</h3>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? AGREGANDO ITEMS AL CARRITO -->
+            <div class="shopping-cart-items contenedorItemsCarritoDeCompras">
+            </div>
+            <!-- ? FIN DE AGREGAR ITEMS AL CARRITO -->
+
+            <!-- INICIO DE TOTALIZAR -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 totalCarrito">$0</p>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- FINAL DE TOTALIZAR -->
+
+
+    </section>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque minima earum delectus, omnis quia, ea optio
+        cumque ut adipisci laboriosam dolorum. Quidem fuga quam inventore mollitia, corporis excepturi deserunt amet.
+    </p>
+
+    <button id="botonDISNEY">DISNEY</button>
+
+    <footer class="pie">
+        <p class="pie__parrafo">Seguinos en Instagram
+        <p>
+            <img id="logoInstagram" src="img/instagram.png" alt="logo instagram">
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <script src="proyectoBulaccio.js"></script>
+    <script src="carrito.js"></script>
+
+
+</body>
+
+</html>
